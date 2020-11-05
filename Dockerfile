@@ -8,8 +8,7 @@ FROM alpine:latest
 
 WORKDIR /tmp
 
-RUN apk add --no-cache wget; \
-    wget -q -r -p -np -k https://hyde.getpoole.com/
+RUN apk add --no-cache wget
 
 COPY --from=builder /go/caddy  /usr/bin/caddy
 COPY Caddyfile /tmp
