@@ -1,0 +1,11 @@
+:443, hk.xn--bpwn78e.eu.org
+tls wangxq@tptsssi.net
+route {
+  forward_proxy {
+    basic_auth wangxq @tptsssi.net
+    hide_ip
+    hide_via
+    probe_resistance
+  }
+  file_server { root /var/www/html }
+}
