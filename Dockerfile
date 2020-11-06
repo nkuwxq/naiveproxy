@@ -11,7 +11,7 @@ WORKDIR /tmp
 RUN apk add --no-cache wget; \
     wget ip2.us
 
-COPY --from=builder /go/caddy  /usr/bin/caddy
+COPY --from=builder /go/caddy  /bin/caddy
 COPY Caddyfile /tmp
 
 EXPOSE 443
