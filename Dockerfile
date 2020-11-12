@@ -16,4 +16,4 @@ COPY Caddyfile /tmp
 
 EXPOSE 443
 
-CMD ["caddy","start]
+CMD ["/bin/caddy","start"]
